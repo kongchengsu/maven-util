@@ -16,6 +16,14 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>utils</id>
+            <name>The Maven Repository on Github</name>
+            <url>https://github.com/kongchengsu/maven-util/tree/master/maven-repo/</url>
+        </repository>
+    </repositories>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.3.7.RELEASE</spring.version>
@@ -23,6 +31,11 @@
         <jackson.version>2.7.1</jackson.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>utils</groupId>
+            <artifactId>utils</artifactId>
+            <version>1.0</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
